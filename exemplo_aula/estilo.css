@@ -1,0 +1,21 @@
+h1 {
+    background-color:aqua;
+} 
+/* Cor de fundo do h1 */
+
+h2 {
+    background-color: darkorange;
+}
+/* Cor de fundo do h2 */
+
+/* Tudo dentro do body aparece em todo o site - imagem aparece no fundo de todo o site */
+body {
+    background-image: url(https://sp.senai.br/images/senai.svg);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* Background-repeat => repete a imagem no fundo / x horizontal / y vertical */
+    background-position: right top;
+    /* Faz ir para direita na parte de cima */
+    background-attachment: fixed;
+    /* Imagem do fundo fica fixada no fundo - attachment define especificações de imagem...  se escrola ou não*/
+}

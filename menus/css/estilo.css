@@ -1,0 +1,50 @@
+h1 {
+    font-size: 40px;
+    color: white;
+    background-color: darkred;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    font-family: sans-serif;
+    text-align: center;
+   /* deixa a borda arredondada */
+    border-radius: 10px;
+    /* padding é dentro - borda interna (margem é dentro) */
+    padding: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(80, 70,70);
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Menu Horizontal */
+/* estilizar tudo envolvendo o ul */
+/* virgula agrupa duas tags - aqui temos um id e uma tag, ou seja, tudo que tem ul dentro de menu terá essas alterações/aplicação dessas propriedades */
+#menu ul {
+    padding: 10px;
+    margin: 0;
+    background-color: #2b1010;
+    /* lista sem pontinhos */
+    list-style: none;
+}
+
+#menu ul li {
+    /* O que tem na tela = display */
+    display: inline;
+}
+
+#menu ul li a {
+    /* margem 10 em cima e embaixo - 30 direita e esquerda */
+    padding: 10px 30px; 
+    /* tira decoração azul do link */
+    text-decoration: none;
+}

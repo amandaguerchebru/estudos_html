@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDropDown</title>
+
+    <style>
+        .dropbtn {
+            background-color: #4caf50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            /* Demonstra ao usuário que é um botão clicável */
+            cursor: pointer;
+        }
+
+        .dropdown {
+            /* Tipos de positions - static = padrão/ fluxo normal da página;  */
+            /* Relative = o elemento continua ocupando o mesmo espaço mas pode ser movido
+            a qualquer momento que precisar com top, left, right, bottom */
+            position: relative;
+            display: inline-block;
+            /* Vai ser relativo e vai se manter na mesma linha */
+        }
+
+        .dropdown-conteudo {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            /* largura mínima */
+            box-shadow: 0 8px 16px 0 rgb(from 0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Menu DropDown SESI</h2>
+    <p>Mova o mouse até o botão para abrir o menu DropDown</p>
+    <div class="dropdown"> 
+    <!-- Pai -->
+        <button class="dropbtn">DropDown</button>
+        <div class="dropdown-conteudo">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <!-- Filhos -->
+    </div>
+</body>
+
+</html>

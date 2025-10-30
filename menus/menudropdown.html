@@ -35,6 +35,31 @@
             box-shadow: 0 8px 16px 0 rgb(from 0, 0, 0, 0.2);
             z-index: 1;
         }
+
+        .dropdown-conteudo a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            /* Faz o link ocupar toda a largura disponível (é clicável em toda a linha) */
+            display: block;
+        }
+
+        /* Hover = faz alguma ação quando passa o mouse em cima 
+        Nesse caso, quando eu passar o mouse muda a cor para f1f1f1*/
+        .dropdown-conteudo a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-conteudo {
+            /* Quando o usuário passa o mouse sobre o elementos classe .dropdown o conteudo
+            oculto é exibido*/
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            /* muda a cor do botão principal quando o menu está sendo exibido */
+            background-color: #3e8e41;
+        }
     </style>
 </head>
 

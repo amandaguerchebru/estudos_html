@@ -1,0 +1,49 @@
+body {
+    /* ../ = sair da pasta */
+    background-image: url(../imagens/capacete-ayrton-senna-senna.jpg);
+    /* A imagem cobre toda a área visível do body */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: red 1px 2px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gold;
+    border: red solid;
+    border-radius: 10px;
+    padding: 3px;
+    /* margem interna em tudo */
+}
+
+.imagem {
+    border: 15px solid white;
+    /* Largura  e altura em porcentagem do elemento pai (ul) */
+    width: 20%;
+    height: 20%;
+    box-shadow: 3px 3px red;
+    /* Tem que ter um relativo pra ter um absoluto */
+    /* Deixa o elemento como referência pra posicionar coisas dentro dele e permite
+    deslocamentos se for preciso */
+    position: relative;
+    /* Qualquer mudança que possa ser animada (vai ser feita SUAVEMENTE em 0,25 segundos) */
+    transition: linear 0.25s;
+}
+
+.rotacao1 {
+    /* Gira o elemento a cinco graus no sentido horário */
+    transform: rotate(5deg);
+}
+
+.rotacao2 {
+    /* Gira menos cinco graus no sentido anti horário */
+    transform: rotate(-5deg);
+}
+
+.imagem:hover {
+    /* Ele desfaz qualquer rotação (volta pra posição reta/estática) 
+    e aumenta o zoom em 1.5 o tamanho */
+    transform: rotate(0deg) scale(1.5);
+}
